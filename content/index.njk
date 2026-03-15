@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Shared Illumination
+---
+<p>Notes and essays authored in Markdown (Obsidian-friendly), then published by git.</p>
+
+<h2>Posts</h2>
+<ul class="posts">
+  {% for post in collections.publishedPosts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <div class="meta">{{ post.date | readableDate }}</div>
+    </li>
+  {% else %}
+    <li class="meta">No posts published yet.</li>
+  {% endfor %}
+</ul>

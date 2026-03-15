@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title or "Shared Illumination" }}</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.65; }
+      a { text-underline-offset: 2px; }
+      header, footer { margin: 1.5rem 0; }
+      .meta { color: #666; font-size: 0.95rem; }
+      ul.posts { list-style: none; padding: 0; }
+      ul.posts li { margin: 1rem 0; }
+      code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/" style="text-decoration:none;color:inherit;">Shared Illumination</a></h1>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="meta">
+      <p>Built with Eleventy · Markdown-first workflow</p>
+    </footer>
+  </body>
+</html>
