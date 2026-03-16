@@ -57,3 +57,10 @@ npm run build
 
 - Keep Phase 1 intentionally simple and stable.
 - No cross-post automation included yet.
+
+
+## GitHub Pages deployment (recommended)
+
+This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` for build + deploy to Pages on each push to `main`.
+
+DNS setup checklist: `docs/github-pages-dns-checklist.md`
